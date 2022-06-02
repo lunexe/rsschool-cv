@@ -23,6 +23,7 @@ Thanks to my ability to perceive new information well, I will quickly get involv
 My hobbies are yoga and film photography
 ## Expirience 
 * [cv.md](https://github.com/lunexe/rsschool-cv/blob/gh-pages/cv.md)
+*****************************
 ## Languages 
 English - Upper-intermediate (B2)
 [EF SET Certificate] (https://www.efset.org/cert/mwqCsB) 
