@@ -84,6 +84,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    color: #4b4b4b;
 }
 .resume .left_block ul li:last-child{
     margin-bottom: 0;
@@ -104,10 +105,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.resume .left_block ul li .data{
+.resume .left_block .resume_skills .soft_skills ul li{
+    color: #4b4b4b;
+    padding-left: 4px;
+    margin-top: 1em;
+    margin-bottom: 1em;    
+}
+.resume .left_block .resume_language ul li{
+    color: #4b4b4b;
+    padding-left: 4px;
+    margin-top: 1em;
+    margin-bottom: 1em; 
 
 }
-
 
 
 
