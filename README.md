@@ -1,1 +1,1 @@
-https://lunexe.github.io/rsschool-cv/
+https://lunexe.github.io/rsschool-cv-html/
