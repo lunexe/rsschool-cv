@@ -128,10 +128,12 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 9px;}
 
 .main__list {
+    font-size: 15px;
+    font-weight: 400;
 
 }
 .main__icon {
-
+    
 }
 .main__title {
     font-size: 25px;
@@ -145,7 +147,12 @@ h1, h2, h3, h4, h5, h6 {
     background-color: brown;
 }
 
-
-
 /*Footer*/
-
+.footer {
+    display: flex;
+}
+.footer__left__data {
+    text-align: left;
+}
+.footer__right {
+}
