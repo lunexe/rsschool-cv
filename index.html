@@ -86,27 +86,27 @@
                     <h2 class="main__title">Code</h2>
                     <div class="code_bg">
                         <pre>
-    void ShakerSort(vector<int>& values) {
-        if (values.empty()) {
-    return;
-                            }
-        int left = 0;
-        int right = values.size() - 1;
-        while (left <= right) {
-        for (int i = right; i > left; --i) {
-        if (values[i - 1] > values[i]) {
-        swap(values[i - 1], values[i]);
-    }
-    }
-        ++left;
-        for (int i = left; i < right; ++i) {
-        if (values[i] > values[i + 1]) {
-            swap(values[i], values[i + 1]);
-    }
-    }
-        --right;
-        }
-    }
+async function showAvatar() {
+
+let response = await fetch('/article/promise-chaining/user.json');
+let user = await response.json();
+
+let githubResponse = await fetch(`https://api.github.com/users/${user.name}`);
+let githubUser = await githubResponse.json();
+
+let img = document.createElement('img');
+img.src = githubUser.avatar_url;
+img.className = "promise-avatar-example";
+document.body.append(img);
+
+await new Promise((resolve, reject) => setTimeout(resolve, 3000));
+
+img.remove();
+
+return githubUser;
+}
+
+showAvatar();
                         </pre>
                     </div>
                 </div>
