@@ -1,8 +1,8 @@
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-
-    font-size: 15px;
+    padding-bottom: 35px;
+    font-size: 19px;
     line-height: 1.6;
     color: #333;
     background: #f2f3f4;
@@ -14,6 +14,11 @@ body{
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+}
+p {
+    text-indent: 1.5em; 
+    text-align: justify; 
+    
 }
 /*Container*/
 .container {
@@ -60,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*Header*/
-.header{
+header{
     width: 100%;
     padding-top: 25px;
     position: absolute;
@@ -81,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Navigation*/
 .nav{
-    font-size: 14px;
+    font-size: 17px;
     text-transform: uppercase;
 }
 .nav__link{
@@ -116,24 +121,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*Main*/
-.main__item {
+.main{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
    }
+.main__item ul{
+    list-style-type: circle;
+     }
 .main__subtitle {
-    font-size: 15px;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: right;
-    padding-top: 9px;}
-
-.main__list {
     font-size: 15px;
     font-weight: 400;
 
 }
-.main__icon {
-    
+.main__icon img{
+	width: 2%;
+	height: 7%;
 }
 .main__title {
     font-size: 25px;
@@ -142,17 +145,25 @@ h1, h2, h3, h4, h5, h6 {
     content: "";
     display: block;
     width: 1200px;
-    height: 3px;
-    margin: 20px auto 0;
+    height: 1.5px;
+    margin: 15 px auto 0;
     background-color: brown;
 }
 
 /*Footer*/
-.footer {
+.footer__container {
     display: flex;
+    justify-content: space-between;
+}
+.footer__left {
+       
 }
 .footer__left__data {
-    text-align: left;
 }
 .footer__right {
 }
+.footer__container img {
+    position: absolute;
+    width: auto;
+	height: 5%;
+   }
