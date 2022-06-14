@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/icons/cv_title.png" type="image/x-icon">
+    <title>Khamitsevich</title>
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__inner">
+                <img class="header__photo" src="assets/img/img1.jpg" alt="photo">
+                <nav class="nav">
+                    <a class="nav__link" href="#Contacts">Contacts</a>
+                    <a class="nav__link" href="#Summary">Summary</a>
+                    <a class="nav__link" href="#Skills">Skills</a>
+                    <a class="nav__link" href="#Code">Code</a>
+                    <a class="nav__link" href="#Projects">Projects</a>
+                    <a class="nav__link" href="#Education">Education</a>
+                    <a class="nav__link" href="#Languages">Languages</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="intro">
+        <div class="container">
+            <h1 class="intro__title">Yahor Khamitsevich</h1>
+            <h2 class="intro__subtitle">Junior Front-end Developer</h2>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="main">
+                <section class="contacts" id="Contacts">
+                    <h2 class="main__title">Contacts</h2>
+                    <ul class="main__list">
+                        <li>
+                            <div class="main__icon">
+                                <img src="assets/icons/email.png" alt="email">
+                                <a href="mailto:lunexe@gmail.com">lunexe@gmail.com</a> 
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main__icon">
+                                <img src="assets/icons/phone.png" alt="phone">
+                                <a href="tel:+375291346714">+375291346714</a>  
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main__icon">
+                                <img src="assets/icons/github.png" alt="github">
+                                <a href="https://github.com/lunexe">Lunexe</a>  
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="main__icon">
+                                <img src="assets/icons/discord.png" alt="discord">
+                                <a href="https://discord.com/">lunexe#3253</a> 
+                            </div> 
+                        </li>
+                    </ul>
+                </section>
+                <section class="Summary" id="Summary">
+                    <h2 class="main__title">Summary</h2>
+                    <p>I have more than 5 years of experience working as a Project Manager in the field of veterinary equipment. I completed ‘Project Management in IT’ training and now want to broaden my technical skills and knowledge of front-end development to be able to apply it in my future work.</p>
+                </section>
+                <section class="Skills" id="Skills">
+                    <h2 class="main__title">Skills</h2>
+                        <ul class="main__list">
+                            <li>Communication skills</li>
+                            <li>Ability to Mulltitask</li>
+                            <li>Team Player</li>
+                            <li>Fast learner</li>
+                            <li>Organized & Efficient</li>
+                            <li>Github</li>
+                            <li>HTML and CSS</li>
+                            <li>Figma</li>
+                        </ul>
+                </section>
+                <section class="Education" id="Education">
+                    <h2 class="main__title">Education</h2>
+                            <ul class="main__list">
+                                <li>Teach Me Skills</li>
+                                <li>BSU</li>
+                                <li>VSAVM</li>
+                            </ul>
+                </section>
+                <section class="Code" id="Code">
+                    <h2 class="main__title">Code</h2>
+                    <div class="code__bg">
+                        <pre>
+$(window).scroll(function() {
+
+var height = $(window).scrollTop();
+if (height > 100) {
+    $('#back2Top').fadeIn();
+} else {
+    $('#back2Top').fadeOut();
+}
+});
+$(document).ready(function() {
+$("#back2Top").click(function(event) {
+    event.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+});
+
+});
+                        </pre>
+                    </div>
+                </section>
+                <section class="Project" id="Projects">
+                    <h2 class="main__title">Project</h2>
+                    <ul class="main__list">
+                        <li><a class="experience__list__anchor" href="https://github.com/lunexe/rsschool-cv">RS school task "CV"</a></li>
+                        <li><a href="https://drive.google.com/file/d/1EbgVZ56AV_jKIOFDNDSZ6NUPwmI5xWEf/view?usp=sharing">TeachMeSkills Project</a></li>
+                    </ul>
+                </section>
+                <section class="Languages" id="Languages">
+                    <h2 class="main__title">Languages</h2>
+                        <ul class="main__list">
+                            <li>English - <b>B2</b></li>
+                            <li>French - <b>A2</b></li>
+                        </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__container">
+                <div><a href="https://rs.school/js/"><img src="assets/icons/rs_school_js.svg" alt="github"></a></div>
+                <h3 class="footer__left__data">CREATED IN 2022</h3>                
+                <div><a href="https://github.com/lunexe"><img src="assets/icons/github_bl.png" alt="github"></a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

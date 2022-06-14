@@ -1,1 +1,1 @@
-# rsschool-cv
+https://lunexe.github.io/rsschool-cv/ 
