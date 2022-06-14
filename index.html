@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/icons/cv_title.png" type="image/x-icon">
     <title>Khamitsevich</title>
-</head>
+    </head>
 <body>
     <header>
         <div class="container">
@@ -82,30 +83,35 @@
                             <li>Figma</li>
                         </ul>
                 </section>
+                <section class="Education" id="Education">
+                    <h2 class="main__title">Education</h2>
+                            <ul>
+                                <li>Teach Me Skills</li>
+                                <li>BSU</li>
+                                <li>VSAVM</li>
+                            </ul>
+                </section>
                 <section class="Code" id="Code">
                     <h2 class="main__title">Code</h2>
                     <div class="code__bg">
                         <pre>
-async function showAvatar() {
+$(window).scroll(function() {
 
-let response = await fetch('/article/promise-chaining/user.json');
-let user = await response.json();
-
-let githubResponse = await fetch(`https://api.github.com/users/${user.name}`);
-let githubUser = await githubResponse.json();
-
-let img = document.createElement('img');
-img.src = githubUser.avatar_url;
-img.className = "promise-avatar-example";
-document.body.append(img);
-
-await new Promise((resolve, reject) => setTimeout(resolve, 3000));
-
-img.remove();
-
-return githubUser;
+var height = $(window).scrollTop();
+if (height > 100) {
+    $('#back2Top').fadeIn();
+} else {
+    $('#back2Top').fadeOut();
 }
-showAvatar();
+});
+$(document).ready(function() {
+$("#back2Top").click(function(event) {
+    event.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+});
+
+});
                         </pre>
                     </div>
                 </section>
@@ -115,14 +121,7 @@ showAvatar();
                         <li><a class="experience__list__anchor" href="https://github.com/lunexe/rsschool-cv">RS school task "CV"</a></li>
                     </ul>
                 </section>
-                <section class="Education" id="Education">
-                    <h2 class="main__title">Education</h2>
-                            <ul>
-                                <li>Teach Me Skills</li>
-                                <li>BSU</li>
-                                <li>VSAVM</li>
-                            </ul>
-                </section>
+                
                 <section class="Languages" id="Languages">
                     <h2 class="main__title">Languages</h2>
                         <ul>
